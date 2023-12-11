@@ -1,0 +1,9 @@
+table,
+th,
+td {
+	border: 4px solid;
+	font-size: xx-large;
+}
+table {
+	width: 100%;
+}

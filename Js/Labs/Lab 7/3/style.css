@@ -1,0 +1,8 @@
+.hover {
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+}
+active {
+	display: block;
+}

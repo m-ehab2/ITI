@@ -1,0 +1,13 @@
+// var footer = document.createElement("div");
+// footer.setAttribute("id", `footer`);
+var img = document.getElementById(`header`);
+// console.log(img.innerHTML);
+// footer.innerHTML = img.innerHTML;
+var footer = img.cloneNode(true);
+document.body.append(footer);
+img.style.display = "flex";
+img.style.justifyContent = "flex-end";
+var nav = document.getElementById("navigation");
+nav.style.textAlign = "left";
+nav.style.display = "flex";
+nav.style.justifyContent = `center`;
