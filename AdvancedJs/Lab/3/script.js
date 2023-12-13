@@ -157,7 +157,7 @@ function edit(e) {
 	var myRow = table
 		.getElementsByTagName("tbody")[0]
 		.getElementsByTagName("tr")[Number(this.id)];
-	console.log(myRow);
+	// console.log(myRow);
 	var columns = myRow.getElementsByTagName("td");
 	for (let index = 0; index < 4; index++) {
 		columns[

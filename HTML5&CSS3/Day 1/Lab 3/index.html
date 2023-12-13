@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<form action="">
+			<input
+				onchange="span.innerHTML=this.value
+                range.value=this.value"
+				="number"
+				type="number"
+				name="num"
+				max="20"
+				min="0"
+				value="0"
+			/>
+			<input
+				onchange="span.innerHTML=this.value
+                num.value=this.value"
+				type="range"
+				min="0"
+				max="20"
+				step="1"
+				id="range"
+				value="0"
+			/>
+			<span id="span">10</span>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div style="border: solid black 1px">
+			<h1>Change Email Address</h1>
+			<form action="" style="">
+				<div class="UserName">
+					<label for="userName">Username:</label>
+					<input
+						type="text"
+						id="userName"
+						name="userName"
+						placeholder="username"
+						pattern="[A-Za-z]{8,20}"
+						title="Please enter a valid username with 8 to 20 characters (letters and numbers only)"
+						required
+					/>
+				</div>
+
+				<Email>
+					<label for="email">Email:</label>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						placeholder="email"
+						title="Please enter a valid email address"
+						required
+					/>
+				</Email>
+
+				<input type="submit" value="Submit" />
+			</form>
+		</div>
+	</body>
+</html>

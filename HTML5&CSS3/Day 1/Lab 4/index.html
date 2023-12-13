@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				align-items: center;
+			}
+			.gridSize {
+				display: flex;
+				gap: 20px;
+				align-items: flex-end;
+			}
+			.gridSize div {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 10px;
+			}
+			input[type="submit"] {
+				background-color: aqua;
+				width: auto;
+				height: 20px;
+			}
+			table {
+				border: solid black 0.5px;
+				margin-top: 50px;
+				border-collapse: collapse;
+			}
+			td {
+				border: solid black 0.5px;
+				width: 20px;
+				height: 20px;
+				margin: 0px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Pixel Drawer</h1>
+		<form action="">
+			<div class="gridSize">
+				<div class="Height">
+					<label for="Height">Grid Height</label>
+					<input type="number" name="Height" />
+				</div>
+
+				<div class="Width">
+					<label for="Width">Grid Width</label>
+					<input type="number" name="Width" />
+				</div>
+				<input type="submit" />
+			</div>
+		</form>
+		<input type="color" id="Color" />
+		<script src="script.js"></script>
+	</body>
+</html>

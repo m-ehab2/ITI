@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			progress {
+				appearance: none;
+			}
+			span {
+				display: inline-block;
+			}
+			progress[value]::-webkit-progress-bar {
+				background-image: linear-gradient(to right, white, brown);
+			}
+			progress::-webkit-progress-value {
+				background-color: black;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<span>Progress</span>
+			<progress min="'0" max="100" value="50"></progress>
+			<span></span>
+		</div>
+		<script>
+			let progress = document.getElementsByTagName("progress")[0];
+			let span = document.getElementsByTagName("span")[1];
+			setInterval(function () {
+				if (progress.value === 100) {
+					progress.value = 0;
+				} else {
+					progress.value++;
+				}
+				span.innerHTML = progress.value + "%";
+			}, 300);
+		</script>
+	</body>
+</html>

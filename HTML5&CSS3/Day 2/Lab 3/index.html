@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>أغاني الباشمهندسة</h1>
+		<img style="display: block; width: 100px" src="./resources/1.jfif" />
+		<audio loop autoplay controls>
+			<source src="resources/4.mp3" type="audio/mpeg" />
+			your browser dont support audio
+		</audio>
+		<button id="play">play</button>
+		<button id="pause">pause</button>
+		<button id="stop">stop</button>
+		<button id="mute">mute</button>
+		<input
+			type="range"
+			min="0"
+			max="1"
+			step=".1"
+			value="1"
+			id="rangeVolume"
+		/>
+		<input type="range" min="0" max="" value="1" id="rangeTime" />
+		<div class="playlist" style="display: flex; flex-direction: column">
+			<button id="0">لا تبكي يا صغيري</button>
+			<button id="1">في يوم</button>
+			<button id="2">أنت الأمل</button>
+			<button id="3">حلمنا نهار</button>
+		</div>
+		<script>
+			var a = document.getElementsByTagName("audio")[0];
+			var img = document.getElementsByTagName("img")[0];
+			var playBtn = document.getElementById("play");
+			var pauseBtn = document.getElementById("pause");
+			var stopBtn = document.getElementById("stop");
+			var stopBtn = document.getElementById("stop");
+			var muteBtn = document.getElementById("mute");
+			var rangeVolume = document.getElementById("rangeVolume");
+			var rangeTime = document.getElementById("rangeTime");
+			var audioList = [
+				"resources/1.mp3",
+				"resources/2.mp3",
+				"resources/3.mp3",
+				"resources/4.mp3",
+			];
+			var picList = [
+				"./resources/1.jfif",
+				"./resources/2.jfif",
+				"./resources/3.jpg",
+				"./resources/4.jfif",
+			];
+			var buttons = document
+				.getElementsByTagName("div")[0]
+				.getElementsByTagName("button");
+			console.log(buttons);
+			for (let index = 0; index < buttons.length; index++) {
+				buttons[index].addEventListener("click", function () {
+					img.src = picList[this.id];
+					a.src = audioList[this.id];
+				});
+			}
+			a.addEventListener("durationchange", function () {
+				rangeTime.max = a.duration;
+			});
+			rangeTime.addEventListener("input", function () {
+				a.currentTime = rangeTime.value;
+			});
+			a.addEventListener("timeupdate", function () {
+				rangeTime.value = a.currentTime;
+			});
+
+			///////////////////////////////////////////////////////////////////
+			playBtn.addEventListener("click", function () {
+				a.play();
+			});
+			//////////////////////////////////////////////////////////////////
+			pauseBtn.addEventListener("click", function () {
+				a.pause();
+			});
+			////////////////////////////////////////////////////////////////
+			stopBtn.addEventListener("click", function () {
+				a.load();
+				a.pause();
+			});
+			//////////////////////////////////////////////////////////////////
+			muteBtn.addEventListener("click", function () {
+				a.muted = !a.muted;
+			});
+			//////////////////////////////////////////////////////////////////
+			rangeVolume.addEventListener("input", function () {
+				a.volume = rangeVolume.value;
+			});
+			/////////////////////////////////////////////////////////////////////
+		</script>
+	</body>
+</html>

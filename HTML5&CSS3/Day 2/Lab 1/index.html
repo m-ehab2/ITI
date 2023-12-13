@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<input type="color" style="display: block" />
+		<canvas width="300" height="300"></canvas>
+		<script>
+			var c = document.getElementsByTagName("canvas")[0];
+			var ctx = c.getContext("2d");
+			for (let index = 0; index < 50; index++) {
+				ctx.beginPath();
+				ctx.arc(
+					Math.floor(Math.random() * c.width),
+					Math.floor(Math.random() * c.height),
+					40,
+					0,
+					2 * Math.PI
+				);
+				ctx.stroke();
+			}
+			var color = document.getElementsByTagName("input")[0];
+			color.addEventListener("change", function () {
+				ctx.clearRect(0, 0, c.width, c.height);
+				for (let index = 0; index < 50; index++) {
+					ctx.strokeStyle = color.value;
+					ctx.beginPath();
+					ctx.arc(
+						Math.floor(Math.random() * c.width),
+						Math.floor(Math.random() * c.height),
+						40,
+						0,
+						2 * Math.PI
+					);
+					ctx.stroke();
+				}
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<div class="Green">
+			<label for="">Green</label>
+			<input type="range" min="0" max="1" step="0.01" />
+		</div>
+		<div class="Red">
+			<label for="">Red</label>
+			<input type="range" min="0" max="1" step="0.01" />
+		</div>
+		<div class="Blue">
+			<label for="">Blue</label>
+			<input type="range" min="0" max="1" step="0.01" />
+		</div>
+		<h1>I change Colors</h1>
+		<script>
+			var text = document.getElementsByTagName("h1")[0];
+			console.log(text);
+			var inputs = document.getElementsByTagName("input");
+			var rgb = [inputs[0].value, inputs[1].value, inputs[2].value];
+			inputs[0].addEventListener("input", function () {
+				rgb[0] = this.value;
+				text.style.color = `rgb(${rgb[0] * 255},${rgb[1] * 255},${
+					rgb[2] * 255
+				})`;
+			});
+			inputs[1].addEventListener("input", function () {
+				rgb[1] = this.value;
+				text.style.color = `rgb(${rgb[0] * 255},${rgb[1] * 255},${
+					rgb[2] * 255
+				})`;
+			});
+			inputs[2].addEventListener("input", function () {
+				rgb[2] = this.value;
+				text.style.color = `rgb(${rgb[0] * 255},${rgb[1] * 255},${
+					rgb[2] * 255
+				})`;
+			});
+		</script>
+	</body>
+</html>
