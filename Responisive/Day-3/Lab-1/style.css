@@ -1,0 +1,105 @@
+/* :root {
+	--maincolor: #309aff;
+	--bgColor: #575988;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+body {
+	display: flex;
+	align-items: center;
+	justify-content: top;
+	width: 100vw;
+	flex-direction: column;
+	height: 100vh;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+nav {
+	display: flex;
+	width: 100%;
+	background-color: #0082e6;
+	padding: 20px;
+	justify-content: space-between;
+	height: 10%;
+}
+h1 {
+	color: white;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-size: 1.5rem;
+}
+button {
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	display: none;
+	color: white;
+}
+.Logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+ul {
+	display: flex;
+	align-items: center;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	padding: 10px;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-size: 1.5rem;
+	color: white;
+}
+a:hover {
+	background-color: #1b9bff;
+}
+main {
+	background: linear-gradient(
+			180deg,
+			rgba(0, 130, 230, 0.9),
+			rgba(0, 0, 0, 0.2)
+		),
+		url(./matheus-cenali-3RicCdnXfHs-unsplash.jpg);
+	margin: 0px;
+	width: 100%;
+	padding: 10px;
+	height: 70%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	font-family: "Rubik", sans-serif;
+	gap: 10px;
+}
+main h1 {
+	font-size: 3rem;
+}
+main p {
+	width: 70%;
+	font-size: 1.2rem;
+	color: white;
+}
+main a {
+	background-color: transparent;
+	border: 2px solid white;
+}
+main a:hover {
+	background-color: white;
+	color: #0082e6;
+}
+@media (max-width: 767px) {
+	button {
+		display: block;
+	}
+	nav {
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 10px 10px 0px 10px;
+	}
+}
