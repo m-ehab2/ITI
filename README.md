@@ -10,9 +10,8 @@ Welcome to the Full Stack MEARN Developer Labs repository! This repository conta
 2. [Folder Structure](#folder-structure)
 3. [Getting Started](#getting-started)
 4. [Labs Overview](#labs-overview)
-5. [Content Included](#technologies-used)
-6. [License](#license)
-7. [Acknowledgments](#acknowledgments)
+5. [Included Content](#included-content )
+6. [Acknowledgments](#acknowledgments)
 
 ## Introduction
 
@@ -49,7 +48,7 @@ To run the labs and projects, follow these general steps:
 
 Each lab is designed to cover specific topics and skills related to Full Stack MEARN development Ranging from Vanilla Javascript to Fullstack Applications.
 
-## Content Included
+## Included Content 
 
 The labs in this repository cover a range of technologies, including:
 - **HTML/CSS**: Markup language and stylesheet language for structuring and styling web content.
@@ -67,6 +66,6 @@ I would like to express my gratitude to the ITI program for providing a comprehe
 
 Feel free to explore the labs, experiment with the code, and use them as a reference for your own learning journey.
 
-**[⬆️ Back to Top](./#table-of-contents)**
+**[⬆️ Back to Top](#table-of-contents)**
 
 
