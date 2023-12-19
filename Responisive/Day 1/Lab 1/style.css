@@ -1,0 +1,106 @@
+:root {
+	--maincolor: #6c63ff;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.Frame {
+	background-color: #e4e4e4;
+	border-radius: 10px;
+	display: flex;
+	padding: 10px;
+	width: 60%;
+	height: 600px;
+	gap: 10px;
+}
+.sideBar {
+	background-color: var(--maincolor);
+	border-radius: 10px;
+	color: #e4e4e4;
+	font-family: "Roboto";
+	padding: 10px;
+	box-sizing: border-box;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.mainContent {
+	background-color: white;
+	border-radius: 10px;
+	color: var(--maincolor);
+	font-family: "Roboto";
+	padding: 20px;
+	box-sizing: border-box;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.Upper {
+	display: flex;
+	flex-direction: column;
+}
+div > h1 {
+	margin-bottom: 0.25rem;
+	font-size: 3rem;
+}
+div > h3 {
+	margin-bottom: 0.5rem;
+	font-size: 2rem;
+}
+p {
+	font-size: 1.2rem;
+}
+.footer {
+	align-self: center;
+}
+.footer p {
+	font-size: 0.85rem;
+}
+.mainContent-Upper {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2rem;
+}
+.mainContent-Upper div {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-size: 1.5rem;
+	width: 40%;
+}
+label {
+	font-size: 1.5rem;
+}
+.mainContent-Lower {
+	display: flex;
+	flex-direction: column;
+}
+input[type="text"] {
+	width: 100%;
+	font-size: 1.3rem;
+	background-color: white;
+	border-color: var(--maincolor);
+	border-radius: 5px;
+}
+textarea {
+	font-size: 1.3rem;
+	background-color: white;
+	border-color: var(--maincolor);
+	border-radius: 5px;
+}
+button {
+	height: 3rem;
+	border-radius: 5px;
+	background-color: var(--maincolor);
+	color: white;
+	border: 0px;
+	font-size: 2rem;
+}

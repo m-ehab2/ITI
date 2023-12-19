@@ -1,0 +1,78 @@
+/* :root {
+	--maincolor: #309aff;
+	--bgColor: #575988;
+} */
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+}
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+nav {
+	display: flex;
+	width: 100%;
+	background-color: #0082e6;
+	padding: 20px;
+	justify-content: space-between;
+}
+h1 {
+	color: white;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-size: 1.5rem;
+}
+button {
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	display: none;
+	color: white;
+}
+.Logo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+ul {
+	display: flex;
+	align-items: center;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	padding: 10px;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	font-size: 1.5rem;
+	color: white;
+}
+a:hover {
+	background-color: #1b9bff;
+}
+@media (max-width: 767px) {
+	button {
+		display: block;
+	}
+	nav {
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 10px 0px 0px 0px;
+	}
+	ul {
+		margin-top: 10px;
+		flex-direction: column;
+		background-color: #2c3e50;
+		justify-content: space-between;
+		height: 70vh;
+		padding: 20px;
+	}
+	a {
+		padding: 20px;
+	}
+}

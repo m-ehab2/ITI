@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ace of Spades</title>
+		<style>
+			.card {
+				position: relative;
+				width: 200px;
+				height: 300px;
+				background-color: #fff;
+				border-radius: 20px;
+				margin: 50px auto;
+				border: 3px solid #ff0000;
+			}
+			.text {
+				position: absolute;
+				color: #ff0000;
+				font-size: 30px;
+				font-weight: bold;
+				z-index: 3;
+			}
+
+			.text.top-left {
+				top: 10px;
+				left: 10px;
+			}
+
+			.text.bottom-right {
+				bottom: 10px;
+				right: 10px;
+			}
+			.heart {
+				width: 50px;
+				height: 50px;
+				background-color: black;
+				position: relative;
+				transform: rotate(135deg);
+				margin: 50px auto;
+				top: 35px;
+			}
+
+			.heart::before,
+			.heart::after {
+				content: "";
+				width: 50px;
+				height: 50px;
+				background-color: black;
+				position: absolute;
+				border-radius: 50%;
+			}
+
+			.heart::before {
+				top: -25px;
+				left: 0;
+			}
+
+			.heart::after {
+				top: 0;
+				left: 25x;
+			}
+			.heart2 {
+				position: absolute;
+				top: 35px;
+				right: 75px;
+				transform: rotate(-135deg);
+			}
+
+			.rect {
+				width: 0;
+				height: 0;
+				border-left: 30px solid transparent;
+				border-right: 30px solid transparent;
+				border-bottom: 40px solid black;
+				position: relative;
+				left: 70px;
+				top: -10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="card">
+			<div class="text top-left">A</div>
+			<div class="heart"></div>
+			<div class="heart2 heart"></div>
+			<div class="text bottom-right">A</div>
+			<div class="rect"></div>
+		</div>
+	</body>
+</html>

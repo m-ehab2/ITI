@@ -1,0 +1,122 @@
+<html>
+	<head>
+		<title>Simple Map</title>
+		<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+		<style>
+			/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+			#map {
+				height: 100%;
+			}
+
+			/* 
+ * Optional: Makes the sample page fill the window. 
+ */
+			html,
+			body {
+				height: 100%;
+				margin: 0;
+				padding: 0;
+			}
+			table {
+				width: 80%;
+				margin: 20px auto;
+				border-collapse: collapse;
+				background-color: green;
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+				text-align: center;
+			}
+
+			th,
+			td {
+				padding: 12px 15px;
+				text-align: left;
+				border-bottom: 1px solid #ddd;
+				color: wheat;
+			}
+
+			th {
+				background-color: green;
+				color: #ffffff;
+			}
+		</style>
+	</head>
+	<body>
+		<button
+			style="
+				background-color: green;
+				border-radius: 5px;
+				color: white;
+				padding: 10px;
+				margin: 20px;
+			"
+		>
+			map
+		</button>
+		<button
+			style="
+				background-color: green;
+				border-radius: 5px;
+				color: white;
+				padding: 10px;
+				margin: 20px;
+			"
+		>
+			get Location Info
+		</button>
+		<table id="table"></table>
+		<div id="map"></div>
+
+		<!-- prettier-ignore -->
+		<script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+        ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly"});</script>
+
+		<script>
+			let map;
+			var btnMap = document.getElementsByTagName("button")[0];
+			btnMap.addEventListener("click", function () {
+				navigator.geolocation.getCurrentPosition(sucess, error);
+			});
+			/////////////////////////////////////////////////////////////////////
+			function sucess(obj) {
+				var lat = obj.coords.latitude;
+				var log = obj.coords.longitude;
+				initMap(log, lat);
+			}
+			///////////////////////////////////////////////////////////////////////
+			function error(e) {
+				console.log("error");
+			}
+			////////////////////////////////////////////////////////////////////////
+			async function initMap(y, x) {
+				const { Map } = await google.maps.importLibrary("maps");
+
+				map = new Map(document.getElementById("map"), {
+					center: { lat: x, lng: y },
+					zoom: 20,
+				});
+			}
+			var btnInfo = document.getElementsByTagName("button")[1];
+			btnInfo.addEventListener("click", function () {
+				navigator.geolocation.getCurrentPosition((obj) => {
+					document.getElementById("table").innerHTML = "";
+					var lat = obj.coords.latitude;
+					var log = obj.coords.longitude;
+					var date = new Date();
+					document.getElementById("table").innerHTML +=
+						"<thead><th>Long</th><th>Lat</th><th>Time</th></thead><tbody><tr><td>" +
+						log +
+						"</td><td>" +
+						lat +
+						"</td><td>" +
+						date +
+						"</td><tbody>";
+					console.log(date);
+				}, error);
+			});
+		</script>
+	</body>
+</html>

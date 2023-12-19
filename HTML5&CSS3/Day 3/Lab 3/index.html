@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.myDiv {
+				background-image: url(./sun.avif),
+					url(./sea-background-video-conferencing_52683-46343.avif),
+					url(./thankful-businessman-with-open-arms-field_254268-363.jpg);
+				background-blend-mode: color;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 300px;
+				width: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<img
+			src="./thankful-businessman-with-open-arms-field_254268-363.jpg"
+			alt=""
+		/>
+		<div class="myDiv"></div>
+		<button onclick="applyFilter('saturate(200%)')">Saturate</button>
+		<button onclick="applyFilter('opacity(0.5)')">Opacity</button>
+		<button onclick="applyFilter('invert(100%)')">Invert</button>
+		<button onclick="applyFilter('sepia(100%)')">Sepia</button>
+		<button onclick="applyFilter('grayscale(100%)')">Greyscale</button>
+
+		<script>
+			function applyFilter(filter) {
+				let image = document.getElementsByTagName("div")[0];
+				image.style.filter = filter;
+			}
+		</script>
+	</body>
+</html>
