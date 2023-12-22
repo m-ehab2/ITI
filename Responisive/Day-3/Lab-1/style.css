@@ -22,7 +22,6 @@ nav {
 	background-color: #0082e6;
 	padding: 20px;
 	justify-content: space-between;
-	height: 10%;
 }
 h1 {
 	color: white;
@@ -102,4 +101,22 @@ main a:hover {
 		justify-content: space-between;
 		padding: 10px 10px 0px 10px;
 	}
+	nav > ul {
+		flex-direction: column;
+		gap: 20px;
+		background-color: rgba(0, 0, 0, 0.5);
+		padding: 10px;
+	}
+	.social {
+		flex-direction: row;
+		justify-content: center;
+	}
+	/* #toggleButton:not(:checked),
+	nav ul {
+		background-color: white;
+	}
+	#toggleButton:checked,
+	nav ul {
+		background-color: black;
+	} */
 }

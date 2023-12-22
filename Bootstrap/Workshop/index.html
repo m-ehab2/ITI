@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+		/>
+		<script
+			src="https://kit.fontawesome.com/92f293de12.js"
+			crossorigin="anonymous"
+		></script>
+		<style>
+			a {
+				text-decoration: none;
+				color: black;
+			}
+
+			.Product-rating a i {
+				color: #ffb800 !important;
+			}
+
+			.card:hover .icons {
+				top: 20%;
+				opacity: 1;
+			}
+
+			.icons div {
+				background-color: white;
+				border-radius: 50%;
+				padding: 20px;
+				display: block;
+				transition: all 0.25s ease-in-out;
+			}
+
+			.icons {
+				position: absolute;
+				width: 100%;
+				padding: 20px;
+				top: 30%;
+				justify-content: space-around;
+				transition: all 0.5s ease-in-out;
+				opacity: 0;
+			}
+
+			.Product-rating a:hover i {
+				color: rgb(128, 181, 0) !important;
+			}
+
+			h2 a:hover {
+				color: rgb(128, 181, 0) !important;
+			}
+
+			.icons div:hover {
+				color: white;
+				background-color: rgb(128, 181, 0);
+			}
+
+			.card:hover {
+				box-shadow: 1px -2px 10px -1px rgba(0, 0, 0, 0.33);
+				-webkit-box-shadow: 1px -2px 10px -1px rgba(0, 0, 0, 0.33);
+				-moz-box-shadow: 1px -2px 10px -1px rgba(0, 0, 0, 0.33);
+			}
+
+			.card {
+				transition: all 0.5s ease-in-out;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="title p-3">
+			<h1 style="text-align: center">Featured Products</h1>
+		</div>
+		<div class="container">
+			<div
+				class="row row-cols-2 row-cols-sm-2 row-cols-md-4 text-center gap-5"
+			>
+				<div class="card p-0 position-relative" style="width: 18rem">
+					<div class="product-badge position-relative">
+						<img
+							src="img/img/1.png"
+							class="card-img-top"
+							alt="..."
+						/>
+						<span
+							class="position-absolute px-3 py-1"
+							style="
+								right: 10%;
+								top: 5%;
+								background-color: rgb(128, 181, 0);
+								color: white;
+								font-weight: bold;
+								border-radius: 20px 0px;
+							"
+							>New</span
+						>
+					</div>
+					<div class="icons d-flex">
+						<div><i class="fa-regular fa-eye"></i></div>
+						<div><i class="fa-solid fa-cart-shopping"></i></div>
+						<div><i class="fa-regular fa-heart"></i></div>
+					</div>
+					<div class="card-body">
+						<div class="Product-rating">
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""
+								><i class="fa-solid fa-star-half-stroke"></i
+							></a>
+							<a href=""><i class="fa-regular fa-star"></i></a>
+						</div>
+						<h2 style="font-size: 16px">
+							<a href="">Carrots Group Scal</a>
+						</h2>
+						<div
+							class="product-price"
+							style="
+								color: rgb(128, 181, 0);
+								font-weight: bold;
+								font-size: 20px;
+							"
+						>
+							<span>$32.00</span>
+							<del>$46.00</del>
+						</div>
+					</div>
+				</div>
+				<div class="card p-0 position-relative" style="width: 18rem">
+					<div class="product-badge position-relative">
+						<img
+							src="img/img/2.png"
+							class="card-img-top"
+							alt="..."
+						/>
+					</div>
+					<div class="icons d-flex">
+						<div><i class="fa-regular fa-eye"></i></div>
+						<div><i class="fa-solid fa-cart-shopping"></i></div>
+						<div><i class="fa-regular fa-heart"></i></div>
+					</div>
+					<div class="card-body">
+						<div class="Product-rating">
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""
+								><i class="fa-solid fa-star-half-stroke"></i
+							></a>
+							<a href=""><i class="fa-regular fa-star"></i></a>
+						</div>
+						<h2 style="font-size: 16px">
+							<a href="">Carrots Group Scal</a>
+						</h2>
+						<div
+							class="product-price"
+							style="
+								color: rgb(128, 181, 0);
+								font-weight: bold;
+								font-size: 20px;
+							"
+						>
+							<span>$32.00</span>
+							<del>$46.00</del>
+						</div>
+					</div>
+				</div>
+				<div class="card p-0 position-relative" style="width: 18rem">
+					<div class="product-badge position-relative">
+						<img
+							src="img/img/3.png"
+							class="card-img-top"
+							alt="..."
+						/>
+						<span
+							class="position-absolute px-3 py-1"
+							style="
+								right: 10%;
+								top: 5%;
+								background-color: rgb(128, 181, 0);
+								color: white;
+								font-weight: bold;
+								border-radius: 20px 0px;
+							"
+							>New</span
+						>
+					</div>
+					<div class="icons d-flex">
+						<div><i class="fa-regular fa-eye"></i></div>
+						<div><i class="fa-solid fa-cart-shopping"></i></div>
+						<div><i class="fa-regular fa-heart"></i></div>
+					</div>
+					<div class="card-body">
+						<div class="Product-rating">
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""
+								><i class="fa-solid fa-star-half-stroke"></i
+							></a>
+							<a href=""><i class="fa-regular fa-star"></i></a>
+						</div>
+						<h2 style="font-size: 16px">
+							<a href="">Carrots Group Scal</a>
+						</h2>
+						<div
+							class="product-price"
+							style="
+								color: rgb(128, 181, 0);
+								font-weight: bold;
+								font-size: 20px;
+							"
+						>
+							<span>$32.00</span>
+							<del>$46.00</del>
+						</div>
+					</div>
+				</div>
+				<div class="card p-0 position-relative" style="width: 18rem">
+					<div class="product-badge position-relative">
+						<img
+							src="img/img/4.png"
+							class="card-img-top"
+							alt="..."
+						/>
+						<span
+							class="position-absolute px-3 py-1"
+							style="
+								right: 10%;
+								top: 5%;
+								background-color: rgb(128, 181, 0);
+								color: white;
+								font-weight: bold;
+								border-radius: 20px 0px;
+							"
+							>New</span
+						>
+					</div>
+					<div class="icons d-flex">
+						<div><i class="fa-regular fa-eye"></i></div>
+						<div><i class="fa-solid fa-cart-shopping"></i></div>
+						<div><i class="fa-regular fa-heart"></i></div>
+					</div>
+					<div class="card-body">
+						<div class="Product-rating">
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""
+								><i class="fa-solid fa-star-half-stroke"></i
+							></a>
+							<a href=""><i class="fa-regular fa-star"></i></a>
+						</div>
+						<h2 style="font-size: 16px">
+							<a href="">Carrots Group Scal</a>
+						</h2>
+						<div
+							class="product-price"
+							style="
+								color: rgb(128, 181, 0);
+								font-weight: bold;
+								font-size: 20px;
+							"
+						>
+							<span>$32.00</span>
+							<del>$46.00</del>
+						</div>
+					</div>
+				</div>
+				<div class="card p-0 position-relative" style="width: 18rem">
+					<div class="product-badge position-relative">
+						<img
+							src="img/img/5.png"
+							class="card-img-top"
+							alt="..."
+						/>
+						<span
+							class="position-absolute px-3 py-1"
+							style="
+								right: 10%;
+								top: 5%;
+								background-color: rgb(128, 181, 0);
+								color: white;
+								font-weight: bold;
+								border-radius: 20px 0px;
+							"
+							>New</span
+						>
+					</div>
+					<div class="icons d-flex">
+						<div><i class="fa-regular fa-eye"></i></div>
+						<div><i class="fa-solid fa-cart-shopping"></i></div>
+						<div><i class="fa-regular fa-heart"></i></div>
+					</div>
+					<div class="card-body">
+						<div class="Product-rating">
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""
+								><i class="fa-solid fa-star-half-stroke"></i
+							></a>
+							<a href=""><i class="fa-regular fa-star"></i></a>
+						</div>
+						<h2 style="font-size: 16px">
+							<a href="">Carrots Group Scal</a>
+						</h2>
+						<div
+							class="product-price"
+							style="
+								color: rgb(128, 181, 0);
+								font-weight: bold;
+								font-size: 20px;
+							"
+						>
+							<span>$32.00</span>
+							<del>$46.00</del>
+						</div>
+					</div>
+				</div>
+				<div class="card p-0 position-relative" style="width: 18rem">
+					<div class="product-badge position-relative">
+						<img
+							src="img/img/6.png"
+							class="card-img-top"
+							alt="..."
+						/>
+						<span
+							class="position-absolute px-3 py-1"
+							style="
+								right: 10%;
+								top: 5%;
+								background-color: rgb(128, 181, 0);
+								color: white;
+								font-weight: bold;
+								border-radius: 20px 0px;
+							"
+							>New</span
+						>
+					</div>
+					<div class="icons d-flex">
+						<div><i class="fa-regular fa-eye"></i></div>
+						<div><i class="fa-solid fa-cart-shopping"></i></div>
+						<div><i class="fa-regular fa-heart"></i></div>
+					</div>
+					<div class="card-body">
+						<div class="Product-rating">
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""
+								><i class="fa-solid fa-star-half-stroke"></i
+							></a>
+							<a href=""><i class="fa-regular fa-star"></i></a>
+						</div>
+						<h2 style="font-size: 16px">
+							<a href="">Carrots Group Scal</a>
+						</h2>
+						<div
+							class="product-price"
+							style="
+								color: rgb(128, 181, 0);
+								font-weight: bold;
+								font-size: 20px;
+							"
+						>
+							<span>$32.00</span>
+							<del>$46.00</del>
+						</div>
+					</div>
+				</div>
+				<div class="card p-0 position-relative" style="width: 18rem">
+					<div class="product-badge position-relative">
+						<img
+							src="img/img/7.png"
+							class="card-img-top"
+							alt="..."
+						/>
+						<span
+							class="position-absolute px-3 py-1"
+							style="
+								right: 10%;
+								top: 5%;
+								background-color: rgb(128, 181, 0);
+								color: white;
+								font-weight: bold;
+								border-radius: 20px 0px;
+							"
+							>New</span
+						>
+					</div>
+					<div class="icons d-flex">
+						<div><i class="fa-regular fa-eye"></i></div>
+						<div><i class="fa-solid fa-cart-shopping"></i></div>
+						<div><i class="fa-regular fa-heart"></i></div>
+					</div>
+					<div class="card-body">
+						<div class="Product-rating">
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""
+								><i class="fa-solid fa-star-half-stroke"></i
+							></a>
+							<a href=""><i class="fa-regular fa-star"></i></a>
+						</div>
+						<h2 style="font-size: 16px">
+							<a href="">Carrots Group Scal</a>
+						</h2>
+						<div
+							class="product-price"
+							style="
+								color: rgb(128, 181, 0);
+								font-weight: bold;
+								font-size: 20px;
+							"
+						>
+							<span>$32.00</span>
+							<del>$46.00</del>
+						</div>
+					</div>
+				</div>
+				<div class="card p-0 position-relative" style="width: 18rem">
+					<div class="product-badge position-relative">
+						<img
+							src="img/img/8.png"
+							class="card-img-top"
+							alt="..."
+						/>
+						<span
+							class="position-absolute px-3 py-1"
+							style="
+								right: 10%;
+								top: 5%;
+								background-color: rgb(128, 181, 0);
+								color: white;
+								font-weight: bold;
+								border-radius: 20px 0px;
+							"
+							>New</span
+						>
+					</div>
+					<div class="icons d-flex">
+						<div><i class="fa-regular fa-eye"></i></div>
+						<div><i class="fa-solid fa-cart-shopping"></i></div>
+						<div><i class="fa-regular fa-heart"></i></div>
+					</div>
+					<div class="card-body">
+						<div class="Product-rating">
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""><i class="fa-solid fa-star"></i></a>
+							<a href=""
+								><i class="fa-solid fa-star-half-stroke"></i
+							></a>
+							<a href=""><i class="fa-regular fa-star"></i></a>
+						</div>
+						<h2 style="font-size: 16px">
+							<a href="">Carrots Group Scal</a>
+						</h2>
+						<div
+							class="product-price"
+							style="
+								color: rgb(128, 181, 0);
+								font-weight: bold;
+								font-size: 20px;
+							"
+						>
+							<span>$32.00</span>
+							<del>$46.00</del>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
