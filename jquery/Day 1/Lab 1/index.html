@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="cookies.js"></script>
+		<style>
+			* {
+				box-sizing: border-box;
+				margin: 0px;
+				padding: 0px;
+				font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+					sans-serif;
+				font-size: 1.2rem;
+			}
+			body {
+				width: 100vw;
+			}
+
+			.frame {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 30px;
+			}
+			form {
+				background-color: rgb(195, 195, 195);
+				display: flex;
+				flex-direction: column;
+				padding: 20px;
+				border-radius: 10px;
+				justify-content: space-between;
+				align-items: center;
+				gap: 10px;
+			}
+			.cont {
+				display: flex;
+				flex-direction: column;
+			}
+			.radio {
+				flex-direction: row;
+			}
+			.female {
+				display: flex;
+				flex-direction: column;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="frame">
+			<form action="index2.html">
+				<div class="cont">
+					<label for="uName">User Name</label
+					><input type="text" required name="uName" />
+				</div>
+				<div class="cont">
+					<label for="age">Age</label
+					><input type="number" min="0" required name="age" />
+				</div>
+				<div class="cont radio">
+					<div class="female">
+						<label for="male">
+							<img
+								src="./Male_symbol_(fixed_width).svg.png"
+								width="100px"
+							/>
+						</label>
+						<input
+							type="radio"
+							id="male"
+							name="gender"
+							value="male"
+							checked
+						/>
+					</div>
+					<div class="female">
+						<label for="female">
+							<img src="./Venus_symbol.svg.png" width="100px" />
+						</label>
+						<input
+							type="radio"
+							id="female"
+							name="gender"
+							value="female"
+						/>
+					</div>
+				</div>
+				<div class="cont">
+					<select name="color" id="aa" required>
+						<option value="green">green</option>
+						<option value="blue">blue</option>
+						<option value="yellow">yellow</option>
+						<option value="cyan">cyan</option>
+					</select>
+				</div>
+				<input type="submit" />
+			</form>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

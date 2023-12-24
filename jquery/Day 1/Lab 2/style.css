@@ -1,0 +1,35 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body {
+	width: 100vw;
+}
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	margin-top: 20px;
+	align-items: center;
+}
+button {
+	border: 0px;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: aliceblue;
+	border-top: 3px solid transparent;
+}
+button:hover {
+	background-color: blanchedalmond;
+	border-top: 3px solid black;
+}
+button.Active {
+	border-top: 3px solid black;
+	background-color: blanchedalmond;
+}
+.content {
+	margin-top: -5px;
+	background-color: blanchedalmond;
+}

@@ -10,7 +10,7 @@ Welcome to the Full Stack MEARN Developer Labs repository! This repository conta
 2. [Folder Structure](#folder-structure)
 3. [Getting Started](#getting-started)
 4. [Labs Overview](#labs-overview)
-5. [Included Content](#included-content )
+5. [Included Content](#included-content)
 6. [Acknowledgments](#acknowledgments)
 
 ## Introduction
@@ -32,33 +32,39 @@ ITI/
 |-- ...
 |-- README.md
 ```
+
 ## Getting Started
 
 To run the labs and projects, follow these general steps:
 
 1. **Clone the repository to your local machine.**
 
-   ```bash
-   git clone https://github.com/m-ehab2/ITI.git
+    ```bash
+    git clone https://github.com/m-ehab2/ITI.git
+    ```
+
 2. **Navigate to the specific lab or project folder.**
-   ```bash
-   cd ITI/JS
+    ```bash
+    cd ITI/JS
+    ```
 
 ## Labs Overview
 
 Each lab is designed to cover specific topics and skills related to Full Stack MEARN development Ranging from Vanilla Javascript to Fullstack Applications.
 
-## Included Content 
+## Included Content
 
 The labs in this repository cover a range of technologies, including:
-- **HTML/CSS**: Markup language and stylesheet language for structuring and styling web content.
-- **JavaScript**: Programming language used for adding interactivity and behavior to web pages.
-- **Bootstrap**: Frontend framework for designing responsive and mobile-first websites.
-- **MongoDB**: NoSQL database for storing and retrieving data.
-- **Express.js**: Web application framework for building APIs.
-- **Angular**: Frontend framework for building dynamic web applications.
-- **React**: JavaScript library for building user interfaces.
-- **Node.js**: JavaScript runtime for server-side development.
+
+-   **HTML/CSS**: Markup language and stylesheet language for structuring and styling web content.
+-   **JavaScript**: Programming language used for adding interactivity and behavior to web pages.
+-   **Bootstrap**: Frontend framework for designing responsive and mobile-first websites.
+-   **jQuery**: Fast, small, and feature-rich JavaScript library. It simplifies tasks like HTML document traversal and manipulation, event handling, and animation.
+-   **MongoDB**: NoSQL database for storing and retrieving data.
+-   **Express.js**: Web application framework for building APIs.
+-   **Angular**: Frontend framework for building dynamic web applications.
+-   **React**: JavaScript library for building user interfaces.
+-   **Node.js**: JavaScript runtime for server-side development.
 
 ## Acknowledgments
 
@@ -67,5 +73,3 @@ I would like to express my gratitude to the ITI program for providing a comprehe
 Feel free to explore the labs, experiment with the code, and use them as a reference for your own learning journey.
 
 **[⬆️ Back to Top](#table-of-contents)**
-
-
