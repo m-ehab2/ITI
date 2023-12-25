@@ -16,9 +16,63 @@
 				width: 100vw;
 				height: 100vh;
 			}
+			.cont {
+				display: flex;
+				align-items: center;
+				gap: 20px;
+				width: 100%;
+				justify-content: center;
+				padding: 25px;
+				height: 100%;
+			}
+			.img {
+				height: 600px;
+				width: 200px;
+				background-size: cover;
+				background-position: center;
+			}
+			.img1 {
+				background-image: url("./pics/dave-hoefler-lsoogGC_5dg-unsplash.jpg");
+			}
+			.img2 {
+				background-image: url("./pics/goutham-krishna-h5wvMCdOV3w-unsplash.jpg");
+			}
+			.img3 {
+				background-image: url("./pics/sapan-patel-i9Q9bc-WgfE-unsplash.jpg");
+			}
+			.img4 {
+				background-image: url("./pics/shifaaz-shamoon-9K9ipjhDdks-unsplash.jpg");
+			}
+			.carasoul {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				background-color: rgba(0, 0, 0, 0.7);
+				display: none;
+				justify-content: center;
+				align-items: center;
+				gap: 20px;
+			}
+			.img5 {
+				width: 300px;
+			}
+			button {
+				padding: 10px 20px;
+			}
 		</style>
 	</head>
 	<body>
+		<div class="carasoul">
+			<button class="previous"><</button>
+			<div class="img5 img"></div>
+			<button class="next">></button>
+		</div>
+		<div class="cont">
+			<div id="1" class="img1 img imgout"></div>
+			<div id="2" class="img2 img imgout"></div>
+			<div id="3" class="img3 img imgout"></div>
+			<div id="4" class="img4 img imgout"></div>
+		</div>
 		<script src="script.js"></script>
 	</body>
 </html>

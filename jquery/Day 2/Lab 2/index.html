@@ -15,63 +15,63 @@
 				position: relative;
 				width: 100vw;
 				height: 100vh;
+				background-color: antiquewhite;
 			}
-			.cont {
+			.frame {
+				width: 100%;
+				height: 100%;
 				display: flex;
+				flex-direction: column;
+				justify-content: top;
 				align-items: center;
-				gap: 20px;
+			}
+			.tabs {
+				padding: 20px;
 				width: 100%;
+				height: 5rem;
+				display: flex;
+				gap: 10px;
 				justify-content: center;
-				padding: 25px;
-				height: 100%;
+				flex-wrap: wrap;
 			}
-			.img {
-				height: 600px;
-				width: 200px;
-				background-size: cover;
-				background-position: center;
+			.tabs div {
+				width: 18%;
+				height: 2rem;
+				background-color: white;
+				padding: 5px;
+				text-align: center;
+				border-radius: 5px;
+				line-height: 1.5rem;
 			}
-			.img1 {
-				background-image: url("./pics/dave-hoefler-lsoogGC_5dg-unsplash.jpg");
+			.tabs div:hover {
+				background-color: aqua;
+				cursor: pointer;
 			}
-			.img2 {
-				background-image: url("./pics/goutham-krishna-h5wvMCdOV3w-unsplash.jpg");
+			div.clicked {
+				background-color: aqua;
 			}
-			.img3 {
-				background-image: url("./pics/sapan-patel-i9Q9bc-WgfE-unsplash.jpg");
-			}
-			.img4 {
-				background-image: url("./pics/shifaaz-shamoon-9K9ipjhDdks-unsplash.jpg");
-			}
-			.carasoul {
+			.content {
 				width: 100%;
-				height: 100%;
-				position: absolute;
-				background-color: rgba(0, 0, 0, 0.7);
-				display: none;
-				justify-content: center;
-				align-items: center;
+				display: flex;
+				flex-direction: column;
 				gap: 20px;
+				padding: 20px;
 			}
-			.img5 {
-				width: 300px;
+			.content div {
+				border: 1px solid black;
+				padding: 5px;
+				border-radius: 5px;
 			}
-			button {
-				padding: 10px 20px;
+			h1 {
+				margin: 0px;
+				font-size: 1rem;
 			}
 		</style>
 	</head>
 	<body>
-		<div class="carasoul">
-			<button class="previous"><</button>
-			<div class="img5 img"></div>
-			<button class="next">></button>
-		</div>
-		<div class="cont">
-			<div id="1" class="img1 img imgout"></div>
-			<div id="2" class="img2 img imgout"></div>
-			<div id="3" class="img3 img imgout"></div>
-			<div id="4" class="img4 img imgout"></div>
+		<div class="frame">
+			<div class="tabs"></div>
+			<div class="content"></div>
 		</div>
 		<script src="script.js"></script>
 	</body>
