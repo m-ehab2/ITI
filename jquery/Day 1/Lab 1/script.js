@@ -1,6 +1,4 @@
 var form = document.forms[0];
-// console.log(form);
-var selectedGender = document.querySelector('input[name="gender"]:checked');
 function User(userName, age, gender, color) {
 	this.user = userName;
 	this.age = age;
@@ -11,9 +9,6 @@ function User(userName, age, gender, color) {
 document.forms[0].addEventListener("submit", function (e) {
 	var inputs = document.getElementsByTagName("input");
 	var select = document.getElementsByTagName("select")[0];
-	console.log(select.value);
-	console.log(inputs);
-	var length = allCookieList() + 1;
 	var user = new User(
 		inputs[0].value,
 		inputs[1].value,
