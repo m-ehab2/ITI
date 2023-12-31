@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<script src="jQuery.js"></script>
+		<style>
+			* {
+				margin: 0px;
+				padding: 0px;
+				box-sizing: border-box;
+			}
+			body {
+				position: relative;
+				width: 100vw;
+				height: 100vh;
+				background-color: antiquewhite;
+			}
+			.frame {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: top;
+				align-items: center;
+			}
+			.tabs {
+				padding: 20px;
+				width: 100%;
+				height: 5rem;
+				display: flex;
+				gap: 10px;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+			.tabs div {
+				width: 18%;
+				height: 2rem;
+				background-color: white;
+				padding: 5px;
+				text-align: center;
+				border-radius: 5px;
+				line-height: 1.5rem;
+			}
+			.tabs div:hover {
+				background-color: aqua;
+				cursor: pointer;
+			}
+			div.clicked {
+				background-color: aqua;
+			}
+			.content {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				gap: 20px;
+				padding: 20px;
+			}
+			.content div {
+				border: 1px solid black;
+				padding: 5px;
+				border-radius: 5px;
+			}
+			h1 {
+				margin: 0px;
+				font-size: 1rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="frame">
+			<div class="tabs"></div>
+			<div class="content"></div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
