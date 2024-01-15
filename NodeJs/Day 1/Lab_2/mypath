@@ -1,0 +1,153 @@
+[
+  {
+    "productName": "accent chair",
+    "productPrice": 25,
+    "company": "marcos",
+    "rating": 4,
+    "feature": true
+  },
+  {
+    "productName": "albany sectional",
+    "productPrice": 109,
+    "company": "liddy",
+    "rating": 5,
+    "feature": true
+  },
+  {
+    "productName": "albany table",
+    "productPrice": 309,
+    "company": "liddy",
+    "rating": 4.9,
+    "feature": true
+  },
+  {
+    "productName": "armchair",
+    "productPrice": 125,
+    "company": "marcos",
+    "rating": 4.8,
+    "feature": true
+  },
+  {
+    "productName": "bar stool",
+    "productPrice": 40,
+    "company": "liddy",
+    "rating": 4.6,
+    "feature": true
+  },
+  {
+    "productName": "dining table",
+    "productPrice": 42,
+    "company": "ikea",
+    "rating": 4.55,
+    "feature": true
+  },
+  {
+    "productName": "emperor bed",
+    "productPrice": 23,
+    "company": "ikea",
+    "feature": true
+  },
+  {
+    "productName": "entertainment center",
+    "productPrice": 59,
+    "featured": true,
+    "company": "caressa",
+    "feature": true
+  },
+  {
+    "productName": "high-back bench",
+    "productPrice": 39,
+    "featured": true,
+    "company": "ikea",
+    "feature": true
+  },
+  {
+    "productName": "leather sofa",
+    "productPrice": 99,
+    "company": "caressa",
+    "feature": true
+  },
+  {
+    "productName": "modern bookshelf",
+    "productPrice": 31,
+    "featured": true,
+    "company": "caressa",
+    "feature": true
+  },
+  {
+    "productName": "modern poster",
+    "productPrice": 30,
+    "company": "liddy",
+    "feature": true
+  },
+  {
+    "productName": "shelf",
+    "productPrice": 30,
+    "company": "ikea",
+    "feature": true
+  },
+  {
+    "productName": "simple chair",
+    "productPrice": 109,
+    "company": "liddy",
+    "feature": true
+  },
+  {
+    "productName": "sofa set",
+    "productPrice": 129,
+    "company": "marcos",
+    "feature": true
+  },
+  {
+    "productName": "suede armchair",
+    "productPrice": 15,
+    "company": "caressa",
+    "feature": true
+  },
+  {
+    "productName": "utopia sofa",
+    "productPrice": 79,
+    "featured": true,
+    "company": "liddy",
+    "feature": true
+  },
+  {
+    "productName": "vase table",
+    "productPrice": 120,
+    "featured": true,
+    "company": "marcos",
+    "feature": true
+  },
+  {
+    "productName": "wooden bed",
+    "productPrice": 25,
+    "company": "ikea",
+    "feature": true
+  },
+  {
+    "productName": "wooden desk",
+    "productPrice": 15,
+    "company": "ikea",
+    "feature": true
+  },
+  {
+    "productName": "wooden desk",
+    "productPrice": 40,
+    "company": "ikea",
+    "feature": true
+  },
+  {
+    "productName": "wooden table",
+    "productPrice": 23,
+    "featured": true,
+    "company": "caressa",
+    "feature": true
+  },
+  {
+    "productName": "a first wooden table",
+    "productPrice": 23,
+    "featured": true,
+    "company": "caressa",
+    "feature": true
+  }
+]
