@@ -1,0 +1,108 @@
+[
+  {
+    "productName": "accent chair",
+    "productPrice": 25,
+    "company": "marcos",
+    "rating": 4
+  },
+  {
+    "productName": "albany sectional",
+    "productPrice": 109,
+    "company": "liddy",
+    "rating": 5
+  },
+  {
+    "productName": "albany table",
+    "productPrice": 309,
+    "company": "liddy",
+    "rating": 4.9
+  },
+  {
+    "productName": "armchair",
+    "productPrice": 125,
+    "company": "marcos",
+    "rating": 4.8
+  },
+  {
+    "productName": "bar stool",
+    "productPrice": 40,
+    "company": "liddy",
+    "rating": 4.6
+  },
+  {
+    "productName": "dining table",
+    "productPrice": 42,
+    "company": "ikea",
+    "rating": 4.55
+  },
+  {
+    "productName": "emperor bed",
+    "productPrice": 23,
+    "company": "ikea"
+  },
+  {
+    "productName": "entertainment center",
+    "productPrice": 59,
+    "featured": true,
+    "company": "caressa"
+  },
+  {
+    "productName": "high-back bench",
+    "productPrice": 39,
+    "featured": true,
+    "company": "ikea"
+  },
+  {
+    "productName": "leather sofa",
+    "productPrice": 99,
+    "company": "caressa"
+  },
+  {
+    "productName": "modern bookshelf",
+    "productPrice": 31,
+    "featured": true,
+    "company": "caressa"
+  },
+  {
+    "productName": "modern poster",
+    "productPrice": 30,
+    "company": "liddy"
+  },
+  {
+    "productName": "shelf",
+    "productPrice": 30,
+    "company": "ikea"
+  },
+  {
+    "productName": "simple chair",
+    "productPrice": 109,
+    "company": "liddy"
+  },
+  {
+    "productName": "sofa set",
+    "productPrice": 129,
+    "company": "marcos"
+  },
+  {
+    "productName": "suede armchair",
+    "productPrice": 15,
+    "company": "caressa"
+  },
+  {
+    "productName": "utopia sofa",
+    "productPrice": 79,
+    "featured": true,
+    "company": "liddy"
+  },
+  {
+    "productName": "vase table",
+    "productPrice": 120,
+    "featured": true,
+    "company": "marcos"
+  },
+  {
+    "productName": "wooden bed",
+    "productPrice": 25,
+    "company": "ikea"
+  }
+]
