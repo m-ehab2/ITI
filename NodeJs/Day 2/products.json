@@ -1,11 +1,5 @@
 [
   {
-    "productName": "accent chair",
-    "productPrice": 25,
-    "company": "marcos",
-    "rating": 4
-  },
-  {
     "productName": "albany sectional",
     "productPrice": 109,
     "company": "liddy",
@@ -101,8 +95,8 @@
     "company": "marcos"
   },
   {
-    "productName": "wooden bed",
-    "productPrice": 25,
-    "company": "ikea"
+    "description": "travelling",
+    "isDone": false,
+    "isImportant": true
   }
 ]
