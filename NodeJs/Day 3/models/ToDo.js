@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const ToDoSchema = mongoose.Schema({
+    title: String,
     description: String,
     isDone: Boolean,
     isImportant: Boolean,
