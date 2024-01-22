@@ -31,7 +31,6 @@ async function postController(req, res, next) {
             message: "data have been posted",
         });
     } catch (error) {
-        console.log(error);
         next(error)
     }
 }
@@ -48,7 +47,6 @@ async function getOne(req, res, next) {
             data: item,
         });
     } catch (error) {
-        console.log('---------' + error.name + '----------' + error);
         next(error);
     }
 }
@@ -74,6 +72,7 @@ async function patchOne(req, res, next) {
         if (item.length < 1) {
             throw ("This is an invalid ID")
         }
+        await Schema.validateAsync(req.body);
         await ToDo.findOneAndUpdate({ _id: req.params.id }, req.body)
         res.json({
             status: "success",
