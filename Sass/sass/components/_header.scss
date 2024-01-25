@@ -1,0 +1,87 @@
+header {
+	& .header__top {
+		background-color: $bg-secondary;
+		font-size: 0.9rem;
+		display: flex;
+		justify-content: flex-end;
+
+		& i {
+			color: $secondaryColor;
+			font-size: 1rem;
+		}
+
+		& span {
+			@include poppins-font(400);
+			color: $text-tertiary;
+		}
+
+		& ul {
+			display: flex;
+			gap: 5px;
+			margin-right: 80px;
+
+			li.wBorder {
+				border-right: 1px solid rgba($color: #000000, $alpha: 0.1);
+			}
+
+			li {
+				padding: 20px; // Ensure consistency with other spacing units
+			}
+		}
+	}
+
+	& nav {
+		width: 80%;
+		margin: 0 auto;
+		height: 100px;
+		padding: 28px 0;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: space-between;
+
+		.nav__logo {
+			height: 100%;
+		}
+
+		& a {
+			height: 100%;
+			display: inline-block;
+		}
+
+		& img {
+			height: 100%;
+		}
+
+		& .nav__items > ul {
+			display: flex;
+			height: 100%;
+			& li.dropDownItem:hover a + ul {
+				position: absolute;
+				display: flex;
+				flex-direction: column;
+			}
+			& a {
+				@include poppins-font(600);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				padding: 15px; // Ensure consistency
+				color: $secondaryColor;
+				cursor: pointer;
+				transition: all 0.3s ease-in-out;
+
+				& + ul {
+					display: none;
+				}
+
+				&:hover {
+					@include hover($bg-primary, $primaryColor);
+				}
+			}
+
+			& li.active a {
+				@include hover($bg-primary, $primaryColor);
+			}
+		}
+	}
+}

@@ -8,12 +8,7 @@
 		align-items: center;
 		justify-content: space-between;
 	}
-	//  {
-	// 	transition: all 0.3s ease-in-out;
-	// 	@include hover();
-	// }
-	&:hover .title--card > h3,
-	&:hover .title--card > h2,
+
 	&:hover .card__caption {
 		@include hover();
 		transition: all 0.2s ease-in-out;

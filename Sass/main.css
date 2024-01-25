@@ -147,6 +147,85 @@ a {
   color: #777777;
 }
 
+header .header__top {
+  background-color: #f4f4f4;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: flex-end;
+}
+header .header__top i {
+  color: #008fe2;
+  font-size: 1rem;
+}
+header .header__top span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #999;
+}
+header .header__top ul {
+  display: flex;
+  gap: 5px;
+  margin-right: 80px;
+}
+header .header__top ul li.wBorder {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+header .header__top ul li {
+  padding: 20px;
+}
+header nav {
+  width: 80%;
+  margin: 0 auto;
+  height: 100px;
+  padding: 28px 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+header nav .nav__logo {
+  height: 100%;
+}
+header nav a {
+  height: 100%;
+  display: inline-block;
+}
+header nav img {
+  height: 100%;
+}
+header nav .nav__items > ul {
+  display: flex;
+  height: 100%;
+}
+header nav .nav__items > ul li.dropDownItem:hover a + ul {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+header nav .nav__items > ul a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  color: #008fe2;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+header nav .nav__items > ul a + ul {
+  display: none;
+}
+header nav .nav__items > ul a:hover {
+  color: #fff !important;
+  background-color: #2d529f !important;
+}
+header nav .nav__items > ul li.active a {
+  color: #fff !important;
+  background-color: #2d529f !important;
+}
+
 .card img {
   width: 100%;
 }
@@ -156,7 +235,7 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-.card:hover .title--card > h3, .card:hover .title--card > h2, .card:hover .card__caption {
+.card:hover .card__caption {
   color: #fff !important;
   background-color: #2d529f !important;
   transition: all 0.2s ease-in-out;
