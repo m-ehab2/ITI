@@ -2,6 +2,14 @@
 	margin: auto;
 	width: 100%;
 	margin-top: 20px;
-	padding: 0px 10%;
 	@include poppins-font(400);
+}
+section {
+	width: 100%;
+	margin-top: 20px;
+}
+.container {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 30px;
 }

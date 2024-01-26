@@ -1,0 +1,15 @@
+.button {
+	&--outlined {
+		@include poppins-font(700);
+		border: 2px solid $button-dark;
+		font-size: 0.8rem;
+		padding: 10px 30px;
+		border-radius: 20px;
+		color: $button-dark;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			color: white;
+			background-color: $button-dark;
+		}
+	}
+}

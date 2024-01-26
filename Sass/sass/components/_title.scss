@@ -24,3 +24,16 @@
 		}
 	}
 }
+.section__title {
+	h2 {
+		@include poppins-font(600);
+		font-size: 2.2rem;
+		margin-bottom: 10px;
+	}
+	h3 {
+		@include poppins-font(400);
+		font-size: 1.2rem;
+		color: rgba($color: #000000, $alpha: 0.7);
+		margin-bottom: 20px;
+	}
+}

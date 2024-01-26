@@ -25,7 +25,7 @@ header {
 			}
 
 			li {
-				padding: 20px; // Ensure consistency with other spacing units
+				padding: 20px;
 			}
 		}
 	}
@@ -59,13 +59,25 @@ header {
 				position: absolute;
 				display: flex;
 				flex-direction: column;
+				z-index: 5;
+
+				& li {
+					border-bottom: 0.5px solid
+						rgba($color: $primaryColor, $alpha: 0.9);
+				}
+				& a {
+					@include poppins-font(300);
+				}
+				& a:hover {
+					background: lighten($color: $primaryColor, $amount: 5%);
+				}
 			}
 			& a {
 				@include poppins-font(600);
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				padding: 15px; // Ensure consistency
+				padding: 15px;
 				color: $secondaryColor;
 				cursor: pointer;
 				transition: all 0.3s ease-in-out;

@@ -1,4 +1,24 @@
 @mixin hover($x: $bg-primary, $y: $primaryColor) {
-	color: $x !important;
-	background-color: $y !important;
+	color: $x;
+	background-color: $y;
+}
+@mixin dFlex($justify: center, $align: center) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+}
+@mixin medicalRow($bgColor) {
+	position: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	background-color: $bgColor;
+	padding: 20px;
+	width: 23%;
+	color: white;
+	font-size: 20px;
+	@include poppins-font(600);
+	text-wrap: wrap;
+	cursor: pointer;
 }

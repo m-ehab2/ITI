@@ -1,0 +1,34 @@
+.about {
+	.container {
+		@include dFlex;
+		align-items: start;
+		gap: 30px;
+		.about-left {
+			padding: 10px;
+			width: 70%;
+			// h2 {
+			// 	@include poppins-font(600);
+			// 	font-size: 2.2rem;
+			// 	margin-bottom: 10px;
+			// }
+			// h3 {
+			// 	@include poppins-font(400);
+			// 	font-size: 1.2rem;
+			// 	color: rgba($color: #000000, $alpha: 0.7);
+			// 	margin-bottom: 20px;
+			// }
+			p {
+				@include poppins-font(300);
+				color: rgba($color: #000000, $alpha: 0.7);
+				line-height: 1.8;
+				font-size: 16px;
+				margin-bottom: 40px;
+			}
+		}
+		.about-right {
+			img {
+				box-shadow: 10px 10px 74px -15px rgba(0, 0, 0, 0.33);
+			}
+		}
+	}
+}
