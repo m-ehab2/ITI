@@ -1,4 +1,38 @@
 .departments {
 	background-color: $bg-secondary;
 	padding: 40px 0px;
+	& .departments__collage {
+		display: flex;
+		flex-direction: column;
+		& .row {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			& .card {
+				padding: 20px;
+				@include dFlex;
+				align-items: start;
+				gap: 30px;
+				& img {
+					margin-top: -5px;
+				}
+				& .card__caption {
+					@include dFlex(center, start);
+					flex-direction: column;
+					& a {
+						font-size: 1.3rem;
+						color: $secondaryColor;
+						@include poppins-font(600);
+					}
+					& p {
+						margin-top: 15px;
+						@include poppins-font(400);
+						color: #777;
+						font-size: 0.9rem;
+						line-height: 20px;
+					}
+				}
+			}
+		}
+	}
 }

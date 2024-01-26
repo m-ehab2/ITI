@@ -1,0 +1,41 @@
+.resources {
+	background-color: $bg-secondary;
+	padding: 40px 0px;
+	.buttonContainer {
+		@include dFlex;
+	}
+	.resources__catalogue {
+		margin-top: 40px;
+		@include dFlex(space-between, center);
+		margin-bottom: 30px;
+		.card__resources {
+			background-color: white;
+			border-radius: 5px;
+			width: 32%;
+			cursor: pointer;
+			transition: all 0.5s ease-in-out;
+			&:hover {
+				box-shadow: 10px 10px 74px -15px rgba(0, 0, 0, 0.33);
+			}
+			img {
+				width: 100%;
+				border-radius: 5px;
+			}
+			.caption {
+				width: 100%;
+				padding: 25px;
+				h3 {
+					@include poppins-font(600);
+					margin-bottom: 10px;
+					font-size: 1rem;
+				}
+				p {
+					@include poppins-font(300);
+					color: #777;
+					font-size: 0.8rem;
+					line-height: 2;
+				}
+			}
+		}
+	}
+}

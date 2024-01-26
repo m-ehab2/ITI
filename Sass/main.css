@@ -103,7 +103,6 @@ table {
 }
 
 input {
-  -webkit-appearance: none;
   border-radius: 0;
 }
 
@@ -601,6 +600,7 @@ header nav .nav__items > ul li.active a {
   border-radius: 20px;
   color: #242424;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .button--outlined:hover {
   color: white;
@@ -611,22 +611,174 @@ header nav .nav__items > ul li.active a {
   background-color: #f4f4f4;
   padding: 40px 0px;
 }
+.departments .departments__collage {
+  display: flex;
+  flex-direction: column;
+}
+.departments .departments__collage .row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.departments .departments__collage .row .card {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: start;
+  gap: 30px;
+}
+.departments .departments__collage .row .card img {
+  margin-top: -5px;
+}
+.departments .departments__collage .row .card .card__caption {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+.departments .departments__collage .row .card .card__caption a {
+  font-size: 1.3rem;
+  color: #008fe2;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.departments .departments__collage .row .card .card__caption p {
+  margin-top: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #777;
+  font-size: 0.9rem;
+  line-height: 20px;
+}
 
-.card img {
+.doctors .container {
+  padding: 40px 0px;
+  position: relative;
+}
+.doctors .container .carousel__controls {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  top: 10px;
+  right: 0px;
+}
+.doctors .container .carousel__controls div {
+  cursor: pointer;
+}
+.doctors .container .carousel__controls div[aria-disabled=true].prevButton {
+  color: #6085d2;
+}
+.doctors .container .carousel__controls div[aria-disabled=false].prevButton {
+  color: #2d529f;
+}
+.doctors .container .carousel__controls div[aria-disabled=true].nextButton {
+  color: #49bcff;
+}
+.doctors .container .carousel__controls div[aria-disabled=false].nextButton,
+.doctors .container .carousel__controls .nextButton {
+  color: #008fe2;
+}
+.doctors .container .card img {
   width: 100%;
 }
-.card .card__caption {
+.doctors .container .card .card__caption {
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all 0.3s ease-in-out;
 }
-.card:hover .card__caption {
-  color: #fff;
-  background-color: #2d529f;
-  transition: all 0.2s ease-in-out;
+.doctors .container .card .card__caption .section__title h3 {
+  font-size: 1rem;
+  margin: 10px 0px;
+}
+.doctors .container .card .card__caption .section__title h2 {
+  font-size: 1.2rem;
+}
+.doctors .container .card:hover .card__caption {
+  background-color: #008fe2;
+}
+.doctors .container .card:hover .card__caption i {
+  color: white;
+}
+.doctors .container .card:hover .card__caption .section__title h3,
+.doctors .container .card:hover .card__caption .section__title h2 {
+  color: white;
 }
 
+.resources {
+  background-color: #f4f4f4;
+  padding: 40px 0px;
+}
+.resources .buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.resources .resources__catalogue {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.resources .resources__catalogue .card__resources {
+  background-color: white;
+  border-radius: 5px;
+  width: 32%;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.resources .resources__catalogue .card__resources:hover {
+  box-shadow: 10px 10px 74px -15px rgba(0, 0, 0, 0.33);
+}
+.resources .resources__catalogue .card__resources img {
+  width: 100%;
+  border-radius: 5px;
+}
+.resources .resources__catalogue .card__resources .caption {
+  width: 100%;
+  padding: 25px;
+}
+.resources .resources__catalogue .card__resources .caption h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+.resources .resources__catalogue .card__resources .caption p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #777;
+  font-size: 0.8rem;
+  line-height: 2;
+}
+
+.insurance .container .catalogue--insurance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.insurance .container .catalogue--insurance .card---insurance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 150px;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.quote {
+  background-color: #2d529f;
+}
 .section {
   margin: auto;
   width: 100%;

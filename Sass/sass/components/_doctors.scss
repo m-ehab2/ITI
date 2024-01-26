@@ -1,0 +1,63 @@
+.doctors {
+	.container {
+		padding: 40px 0px;
+		position: relative;
+		.carousel__controls {
+			position: absolute;
+			@include dFlex;
+			gap: 10px;
+			top: 10px;
+			right: 0px;
+			div {
+				cursor: pointer;
+			}
+			div[aria-disabled="true"].prevButton {
+				color: lighten($color: $primaryColor, $amount: 20%);
+			}
+			div[aria-disabled="false"].prevButton {
+				color: $primaryColor;
+			}
+			div[aria-disabled="true"].nextButton {
+				color: lighten($color: $secondaryColor, $amount: 20%);
+			}
+			div[aria-disabled="false"].nextButton,
+			.nextButton {
+				color: $secondaryColor;
+			}
+		}
+		.card {
+			& img {
+				width: 100%;
+			}
+			& .card__caption {
+				padding: 10px;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				transition: all 0.3s ease-in-out;
+				.section__title {
+					h3 {
+						font-size: 1rem;
+						margin: 10px 0px;
+					}
+					h2 {
+						font-size: 1.2rem;
+					}
+				}
+			}
+
+			&:hover .card__caption {
+				background-color: $secondaryColor;
+				i {
+					color: white;
+				}
+				.section__title {
+					h3,
+					h2 {
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}
