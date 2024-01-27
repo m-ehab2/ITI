@@ -8,7 +8,7 @@ var slider = tns({
     controlsContainer: '.carousel__controls',
     nav: false
 });
-var slider = tns({
+var slider1 = tns({
     container: '.slider--hero',
     mode: "gallery",
     items: 1,
@@ -17,4 +17,12 @@ var slider = tns({
     speed: 700,
     navContainer: '.slider__nav'
 });
+// var slider2 = tns({
+//     container: '.quote__carousel',
+//     items: 1,
+//     mouseDrag: true,
+//     controls: false,
+//     speed: 700,
+//     nav: false
+// });
 

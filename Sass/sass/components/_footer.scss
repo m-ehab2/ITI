@@ -1,0 +1,70 @@
+.footer {
+	background-color: #34383d;
+	margin: 0px;
+	padding: 30px 0;
+	.container {
+		width: 80%;
+		padding: 0px;
+		margin: 0px auto;
+		@include dFlex(space-between, start);
+		.column {
+			color: white;
+			width: 20%;
+			.div__title {
+				@include poppins-font(600);
+				margin-bottom: 20px;
+				font-size: 1.3rem;
+			}
+			.flex-cont {
+				@include dFlex(center, center);
+				gap: 20px;
+				padding-right: 60px;
+			}
+			.div__content {
+				p {
+					@include poppins-font(300);
+					font-size: 0.9rem;
+					line-height: 1.5;
+					color: #95989c;
+				}
+				.infoItem {
+					font-size: 0.9rem;
+					line-height: 1.5;
+					@include poppins-font(300);
+					.first {
+						color: #95989c;
+					}
+				}
+				.PhoneNumber {
+					font-size: 2rem;
+					line-height: 1.5;
+					@include poppins-font(300);
+					color: #95989c;
+				}
+				a {
+					background-color: white;
+					width: 30px;
+					height: 30px;
+					@include dFlex;
+					transition: all 0.3s ease;
+					i {
+						color: #34383d;
+						transition: all 0.3s ease;
+					}
+					&:hover i {
+						color: white;
+					}
+					&.f:hover {
+						background-color: #3b5a9a;
+					}
+					&.t:hover {
+						background-color: #1aa9e1;
+					}
+					&.l:hover {
+						background-color: #0073b2;
+					}
+				}
+			}
+		}
+	}
+}

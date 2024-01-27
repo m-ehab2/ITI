@@ -1,6 +1,57 @@
 .quote {
 	background-color: $primaryColor;
 	.container {
+		padding-top: 50px;
+		padding-bottom: 50px;
 		display: flex;
+		justify-content: center;
+		.quote__carousel {
+			width: 60%;
+			.quote__cont {
+				@include dFlex;
+				flex-direction: column;
+				margin: 0px auto;
+				.quote-pic {
+					color: white;
+					width: 50px;
+					height: 50px;
+					font-size: 50px;
+					line-height: 75px;
+					font-family: Georgia, "Times New Roman", Times, serif;
+					border: 1px solid white;
+					border-radius: 50%;
+					text-align: center;
+				}
+				blockquote {
+					color: white;
+					text-align: center;
+					@include poppins-font(300);
+					line-height: 1.5;
+					&::before {
+						content: "“";
+						font-family: Georgia, "Times New Roman", Times, serif;
+						font-size: 30px;
+						position: relative;
+						right: 50px;
+						bottom: 20px;
+					}
+					&::after {
+						content: "”";
+						font-family: Georgia, "Times New Roman", Times, serif;
+						font-size: 30px;
+						position: relative;
+						left: 50px;
+						top: 20px;
+					}
+				}
+				.quoteAuthor {
+					margin-top: 10px;
+					border-top: 2px solid rgba($color: #ffffff, $alpha: 0.5);
+					padding-top: 20px;
+					@include poppins-font(600);
+					color: white;
+				}
+			}
+		}
 	}
 }

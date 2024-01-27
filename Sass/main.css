@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 *,
 *:before,
@@ -779,6 +780,150 @@ header nav .nav__items > ul li.active a {
 .quote {
   background-color: #2d529f;
 }
+.quote .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+.quote .container .quote__carousel {
+  width: 60%;
+}
+.quote .container .quote__carousel .quote__cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px auto;
+}
+.quote .container .quote__carousel .quote__cont .quote-pic {
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  line-height: 75px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+}
+.quote .container .quote__carousel .quote__cont blockquote {
+  color: white;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.5;
+}
+.quote .container .quote__carousel .quote__cont blockquote::before {
+  content: "“";
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  position: relative;
+  right: 50px;
+  bottom: 20px;
+}
+.quote .container .quote__carousel .quote__cont blockquote::after {
+  content: "”";
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  position: relative;
+  left: 50px;
+  top: 20px;
+}
+.quote .container .quote__carousel .quote__cont .quoteAuthor {
+  margin-top: 10px;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  padding-top: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: white;
+}
+
+.footer {
+  background-color: #34383d;
+  margin: 0px;
+  padding: 30px 0;
+}
+.footer .container {
+  width: 80%;
+  padding: 0px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.footer .container .column {
+  color: white;
+  width: 20%;
+}
+.footer .container .column .div__title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+}
+.footer .container .column .flex-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-right: 60px;
+}
+.footer .container .column .div__content p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #95989c;
+}
+.footer .container .column .div__content .infoItem {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.footer .container .column .div__content .infoItem .first {
+  color: #95989c;
+}
+.footer .container .column .div__content .PhoneNumber {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #95989c;
+}
+.footer .container .column .div__content a {
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.footer .container .column .div__content a i {
+  color: #34383d;
+  transition: all 0.3s ease;
+}
+.footer .container .column .div__content a:hover i {
+  color: white;
+}
+.footer .container .column .div__content a.f:hover {
+  background-color: #3b5a9a;
+}
+.footer .container .column .div__content a.t:hover {
+  background-color: #1aa9e1;
+}
+.footer .container .column .div__content a.l:hover {
+  background-color: #0073b2;
+}
+
 .section {
   margin: auto;
   width: 100%;
