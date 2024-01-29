@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="sw.js"></script>
+	</head>
+	<body>
+		<main>
+			<header><h1>To Do List</h1></header>
+			<button id="eNotification">Enable Notification</button>
+			<div class="content">
+				<form action="">
+					<div class="inputGroup">
+						<label for="title">Task Title:</label>
+						<input type="text" required />
+					</div>
+					<div class="inputGroup">
+						<div class="inputSubGroup">
+							<label for="title">Hours(HH)</label>
+							<input type="number" min="0" max="23" required />
+						</div>
+						<div class="inputSubGroup">
+							<label for="title">Minutes(HH)</label>
+							<input type="number" min="0" max="59" required />
+						</div>
+					</div>
+					<div class="inputGroup">
+						<label for="title">Due Date</label>
+						<input type="Date" required />
+					</div>
+					<input type="submit" value="Add Task" />
+				</form>
+			</div>
+			<table id="todoTable">
+				<thead>
+					<tr class="notified">
+						<th>Task Title</th>
+						<th>Due Date</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- Todo items will be dynamically inserted here -->
+				</tbody>
+			</table>
+		</main>
+		<script>
+			if ("serviceWorker" in navigator) {
+				navigator.serviceWorker
+					.register("./sw.js")
+					.then((registration) => {
+						console.log("Service Worker registered:", registration);
+					})
+					.catch((error) => {
+						console.error("Service Worker registration failed:", error);
+					});
+			}
+		</script>
+		<script src="dexie.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
