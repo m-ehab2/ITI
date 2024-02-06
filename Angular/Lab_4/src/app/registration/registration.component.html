@@ -1,0 +1,43 @@
+<div class="form-container">
+  <div class="input-group">
+    <label for="nameInput">Name:</label>
+    <input type="text" id="nameInput" name="nameInput" [(ngModel)]="name" />
+    @if (+name.length<3 && name) {
+    <div style="color: red">
+      <p>Name Not Valid:Name Length is less than 3</p>
+    </div>
+    }@else if (+name.length>=3) {
+    <div style="color: greenyellow">
+      <p>Name Valid</p>
+    </div>
+    }@else {
+    <div>
+      <p>Name Required</p>
+    </div>
+    }
+  </div>
+  <div class="input-group">
+    <label for="ageInput">Age:</label>
+    <input
+      type="number"
+      id="ageInput"
+      name="ageInput"
+      [(ngModel)]="age"
+      min="0"
+    />
+    @if (+age>20) {
+    <div style="color: red">
+      <p>Age Not Valid:Age exceeded 20</p>
+    </div>
+    }@else if (age && +age<=20) {
+    <div style="color: greenyellow">
+      <p>Age Valid</p>
+    </div>
+    }@else {
+    <div>
+      <p>Age Required</p>
+    </div>
+    }
+  </div>
+  <button class="submit-button" (click)="handleSubmit($event)">Submit</button>
+</div>

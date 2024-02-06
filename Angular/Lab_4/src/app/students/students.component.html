@@ -1,0 +1,21 @@
+<h1>Students</h1>
+<table class="student-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (item of data; track item.name) {
+    <tr class="student-row">
+      <td>{{ item.name }}</td>
+      <td>{{ item.age }}</td>
+    </tr>
+    } @empty {
+    <tr class="noData">
+      <td colspan="2" class="no-data">There are no students.</td>
+    </tr>
+    }
+  </tbody>
+</table>
