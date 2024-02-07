@@ -1,0 +1,26 @@
+ul{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin: 20px auto;
+    background-color: #3f51b5;
+    padding: 20px;
+    border-radius: 5px;
+    li{
+        list-style: none;
+        font-size: 1.3rem;
+        a{
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+        a:hover{
+            background-color: #838fd2;
+        }
+        a.active{
+            background-color: #5668ce;
+        }
+    }
+}
