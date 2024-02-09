@@ -1,0 +1,14 @@
+.profileContainer {
+  background-color: #c5cae9;
+  width: 80%;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 10px;
+  .label {
+    font-weight: 300;
+  }
+  .value {
+    font-weight: 500;
+    color: #3f51b5;
+  }
+}

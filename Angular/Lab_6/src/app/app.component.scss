@@ -1,0 +1,30 @@
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #3F51B5;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 20px;
+    a{
+        color: white;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 10px;
+        transition: all 0.3s ease-in-out;
+        font-weight: 300;
+        font-size: 1.2rem;
+    }
+    a:hover{
+        background-color: #7986CB;
+    }
+    a.active{
+        background-color: #7986CB;
+    }
+    
+}
+router-outlet{
+    width: 80%;
+    margin: 10px auto;
+}

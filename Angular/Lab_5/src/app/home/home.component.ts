@@ -41,6 +41,7 @@ export class HomeComponent {
       Validators.min(10),
       Validators.max(50),
       Validators.required,
+      Validators.pattern(/^[0-9]/),
     ]),
     email: new FormControl(null, [Validators.required, Validators.email]),
   });
@@ -71,10 +72,10 @@ export class HomeComponent {
   getErrorMessage(s: string) {
     switch (s) {
       case 'name':
-        return 'This field is required and it needs to be more than 3 letters';
+        return 'This field is required and it needs to be more than 3 letters and can`t container a space after a name';
         break;
       case 'age':
-        return 'This field is required and it needs to be more than 10 and less than 50';
+        return 'This field is required and it needs to digits and it must be more than 10 and less than 50';
         break;
       case 'email':
         return 'This field is required and it needs to be a valid email';

@@ -1,0 +1,18 @@
+@if (user) {
+<div class="profileContainer">
+  <h2 class="label">
+    Name is : <span class="value">{{ user.name }}</span>
+  </h2>
+  <h2 class="label">
+    Age is : <span class="value">{{ user.age }}</span>
+  </h2>
+  <h2 class="label">
+    Email is : <span class="value">{{ user.email }}</span>
+  </h2>
+  <h2 class="label">
+    City is : <span class="value">{{ user.city }}</span>
+  </h2>
+</div>
+}@else {
+<h2>Loading</h2>
+}

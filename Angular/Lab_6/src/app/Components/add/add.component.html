@@ -1,0 +1,41 @@
+<div class="example-container">
+  <h1>Please Enter User Details Below:</h1>
+  <form action="" [formGroup]="regValidation" (submit)="(handleSubmit)">
+    <mat-form-field>
+      <mat-label>Enter your Name</mat-label>
+      <input matInput placeholder="Muhamed Ehab" formControlName="name" />
+      @if (!NameValid) {
+      <mat-error>{{ getErrorMessage("name") }}</mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Enter your Age</mat-label>
+      <input matInput placeholder="24" formControlName="age" />
+      @if (!ageValid) {
+      <mat-error>{{ getErrorMessage("age") }}</mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Enter your Email</mat-label>
+      <input matInput placeholder="pat@example.com" formControlName="email" />
+      @if (!emailValid) {
+      <mat-error>{{ getErrorMessage("email") }}</mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Enter Your City</mat-label>
+      <input matInput placeholder="Ismailia" formControlName="city" />
+      @if (!cityValid) {
+      <mat-error>{{ getErrorMessage("city") }}</mat-error>
+      }
+    </mat-form-field>
+    <button
+      (click)="handleSubmit()"
+      type="submit"
+      mat-raised-button
+      color="primary"
+    >
+      Add
+    </button>
+  </form>
+</div>

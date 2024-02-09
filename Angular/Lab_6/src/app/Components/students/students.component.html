@@ -1,0 +1,27 @@
+@if(Users){
+<mat-grid-list cols="4" rowHeight="2:1" gutterSize="10" class="grid">
+  @for (item of Users; track $index) {
+  <mat-grid-tile>
+    <app-one-student [user]="item"></app-one-student>
+  </mat-grid-tile>
+
+  }
+</mat-grid-list>
+
+} @else {
+<mat-grid-list cols="1" rowHeight="7:1" gutterSize="30" class="grid">
+  <mat-grid-tile>
+    <H2>No users Entered, please use the add button to add users</H2>
+  </mat-grid-tile>
+</mat-grid-list>
+}
+<div class="example-button-container">
+  <button
+    mat-mini-fab
+    color="primary"
+    aria-label="Example icon button with a plus one icon"
+    routerLink="add"
+  >
+    <mat-icon>add</mat-icon>
+  </button>
+</div>

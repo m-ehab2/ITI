@@ -1,0 +1,22 @@
+.example-container {
+  h1 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #3f51b5;
+  }
+  background-color: #c5cae9;
+  width: 80%;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 10px;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    mat-form-field {
+      width: 100%;
+    }
+  }
+}
