@@ -22,7 +22,6 @@ export class HandleUsersDataService {
   }
   deleteUser(id: any) {
     console.log('Deleted');
-
     return this.http.delete(this.usersUrl + '/' + id);
   }
 }

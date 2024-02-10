@@ -23,7 +23,6 @@ export class ProfileComponent implements OnInit {
 
   getUserById() {
     const userId = this.route.snapshot.paramMap.get('id');
-
     this.handleData.getUser(userId).subscribe({
       next: (data) => {
         console.log(data);

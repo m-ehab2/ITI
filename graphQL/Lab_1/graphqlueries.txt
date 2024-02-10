@@ -1,0 +1,43 @@
+##Getting All ToDos
+# query {
+#   todos {
+#     id
+#     title
+#     description
+#     state
+#   } 
+# }
+##Getting One ToDo By ID
+# query {
+#   todo(id:"1707565104520") {
+#     id
+#     title
+#     description
+#     state
+#   }
+# }
+##Updating ToDo State
+# mutation{
+#   updateTodoState(id:"1707566330193",state:Done) {
+#     id
+#     title
+#     state
+#   }
+# }
+##Creating a ToDo
+# mutation {
+#   createTodo(title: "My second Todo", description: "This is the description of my todo") {
+#     id
+#     title
+#     description
+#     state
+#   }
+# }
+##Deleting A ToDo
+# mutation {
+#   deleteTodo(id:"1707566651221"){
+#     id
+#     title
+#   }
+# }
+
