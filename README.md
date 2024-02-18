@@ -31,6 +31,7 @@ ITI/
 |   |-- Day 3/Lab 1/
 |-- ...
 |-- README.md
+```
 
 ## Getting Started
 
@@ -77,4 +78,7 @@ I would like to express my gratitude to the ITI program for providing a comprehe
 Feel free to explore the labs, experiment with the code, and use them as a reference for your own learning journey.
 
 [⬆️ Back to Top](#full-stack-mearn-developer-labs)
+
+```
+
 ```
