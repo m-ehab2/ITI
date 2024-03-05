@@ -24,18 +24,19 @@ export default function ProductPage({ product }) {
     </div>
   );
 }
+
 export async function getStaticPaths() {
   return {
     paths: ["/shop/1"],
     fallback: true,
   };
 }
+
 export async function getStaticProps({ params }) {
   console.log(params);
   const response = await fetch(
     `https://fakestoreapi.com/products/${params.productPage}`
   );
-  console.log(response);
   const product = await response.json();
 
   return {

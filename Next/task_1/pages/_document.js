@@ -9,12 +9,12 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand navbar-light bg-light">
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav w-100 d-flex justify-content-center ">
               <Link
                 className={`nav-item nav-link ${
-                  router === "/" ? "active" : ""
+                  router === "/" ? "text-danger" : ""
                 }`}
                 href="/"
               >
@@ -27,6 +27,22 @@ export default function Document() {
                 href="/shop"
               >
                 Shop
+              </Link>
+              <Link
+                className={`nav-item nav-link ${
+                  router === "/news" ? "active" : ""
+                }`}
+                href="/news"
+              >
+                News
+              </Link>
+              <Link
+                className={`nav-item nav-link ${
+                  router === "/swr" ? "active" : ""
+                }`}
+                href="/swr"
+              >
+                SWR
               </Link>
               <Link className="nav-item nav-link" href="/sss">
                 Error
